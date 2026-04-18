@@ -21,12 +21,14 @@ class fourthViewController: UIViewController {
     
     func setupRichContent() {
         let attributedString = NSMutableAttributedString()
-        
+     
+
         // フォント設定
         let titleFont = UIFont.boldSystemFont(ofSize: 24)
         let bodyFont = UIFont.systemFont(ofSize: 16)
         let maxWidth = view.bounds.width - 40
         
+
         // === タイトル ===
         let title = """
         """
@@ -35,11 +37,31 @@ class fourthViewController: UIViewController {
             attributes: [.font: titleFont]
         ))
         
+        if let image = UIImage(named: "鶴岡八幡宮") {
+            let attachment = NSTextAttachment()
+            attachment.image = image
+            
+            // 画像サイズを調整
+            let ratio = maxWidth / image.size.width
+            attachment.bounds = CGRect(x: 0, y: 0,
+                                       width: maxWidth,
+                                       height: image.size.height * ratio)
+            
+            attributedString.append(NSAttributedString(attachment: attachment))
+        }
+        
         
         let text1 = """
-        坐禅は仏教の禅宗で行う修行です。
-        禅宗は鎌倉時代に広まり、「不立文字」という体験を重視する教えが大切にされています。禅宗の始まり、
-        鎌倉で座禅の体験をしませんか。
+        
+        
+        鎌倉の海から一直線にある鶴岡八幡宮。そこから見る景色はとても美しく、海までの素晴らしい景色を見ることができます。
+
+
+        〈見どころ・おすすめの場所〉
+        □さざれ石
+        日本の国家でもうたわれているさざれ石。さざれ石は、小さな石がたくさん集まって大きな石になります。日本人は一人一人が集まって強く大きな力になります。この日本の思い　と誇りが詰まったさざれ石を武士が生まれた鎌倉でぜひみてみませんか。
+
+
 
         """
         attributedString.append(NSAttributedString(
@@ -48,7 +70,7 @@ class fourthViewController: UIViewController {
         ))
         
         
-        if let image = UIImage(named: "建長寺") {
+        if let image = UIImage(named: "さざれ石") {
             let attachment = NSTextAttachment()
             attachment.image = image
             
@@ -63,32 +85,76 @@ class fourthViewController: UIViewController {
         
         
         let text2 = """
-        坐禅は仏教の禅宗で行う修行です。
-        禅宗は鎌倉時代に広まり、「不立文字」という体験を重視する教えが大切にされています。禅宗の始まり、
-        鎌倉で座禅の体験をしませんか。　　　　　　　　　　　　　　　　〈中学生の感想〉
-        私は鎌倉で初めて座禅を体験しました。会場に入ると畳がひんやりしていて、つま先が少し痛くなるほど冷たかったです。私たちは一人ずつ座布団を取り、部屋の中央に座りました。
-        始まる少し前、周りの人がみんな水色の紙を持っていることに気づきました。隣の人に「これは買うんだよ」と教えてもらい、お母さんからお金をもらって近くの机で100円の紙を買いました。その紙には、最初に読むお経が書かれていました。
-        座禅が始まると、まず10分ほどみんなでお経を読みました。
-        そのあと15分間の座禅です。私は寒さと眠気で少しつらかったのですが、静かな空気の中で自分の呼吸だけに集中するのは不思議な体験でした。
-        15分が終わると5分間の休憩がありました。そこでお坊さんが「もう一度座禅をします」と言ったので、とても驚きました。2回行うとは知らなかったからです。でも、2回目をやって本当によかったと思っています。2回目の座禅では心を空っぽにできて、学校や部活の疲れがすっと消えていくように感じました。　　　　　　　　　　　　　　　　　　　　坐禅のおすすめポイント！
-        鎌倉での座禅体験は、心を落ち着かせたい人にとてもおすすめです。静かな時間の中で、自分と向き合う特別な体験ができます。
-        曜日　　:毎週金曜、土曜
-        時間　　:15:30〜16:30
-        場所　　:建長寺(変更の場合があります)
-        申し込み:不要
-        費用　　:大人500円、小中学生200円
-        公式HP  :https://www.kenchoji.com/zazen/
-        住所　　:〒247-8525　神奈川県鎌倉市山ノ内８　　　　　　　〈注意〉
-        ・遅刻すると参加できないので開始15分前までに坐禅会場に入ってください
-        ・会場に「坐禅の手引き」（100円）がありますので購入してください
-        ・お寺の造りはとても開放的で、冬は風がそのまま入ってくるためとても寒いです
+        
+        
+        □イチョウの木
+        鶴岡八幡宮には樹齢約1000年の大きなイチョウの木があります。2010年に強風で倒れましたが今はまた生えてきていてのびのびと生きています。この木は900年以上も前にあった3代目将軍、源実朝の暗殺された事件を見ています。このイチョウの木はたくさんの歴史を見ていて私たちが知らない歴史もしっているかもしれません。
+
+        
         """
         attributedString.append(NSAttributedString(
             string: text2,
             attributes: [.font: bodyFont]
         ))
+        
+        if let image = UIImage(named: "HEIWA") {
+            let attachment = NSTextAttachment()
+            attachment.image = image
+            
+            // 画像サイズを調整
+            let ratio = maxWidth / image.size.width
+            attachment.bounds = CGRect(x: 0, y: 0,
+                                       width: maxWidth,
+                                       height: image.size.height * ratio)
+            
+            attributedString.append(NSAttributedString(attachment: attachment))
+        }
+        
+        let text3 = """
+        
+        
+        □白い鳩
+        境内には池があり、そこにはたくさんの白い鳩がいます。
+        この白い鳩は八幡神(応神天皇)を助けた「神の使い」として信仰されています。平和のシンボルでもあり、見かけると縁起が良いとされ、境内に社殿の「八」の字が鳩の形をしているなど、至る所にそのモチーフが見られるので探してみてください。
+
+        
+        """
+        attributedString.append(NSAttributedString(
+            string: text3,
+            attributes: [.font: bodyFont]
+        ))
+        
+        
+        if let image = UIImage(named: "鶴岡地図") {
+            let attachment = NSTextAttachment()
+            attachment.image = image
+            
+            // 画像サイズを調整
+            let ratio = maxWidth / image.size.width
+            attachment.bounds = CGRect(x: 0, y: 0,
+                                       width: maxWidth,
+                                       height: image.size.height * ratio)
+            
+            attributedString.append(NSAttributedString(attachment: attachment))
+        }
+        
+        let text4 = """
+        
+        費用    :宝物殿は大人200円、高校生以下100円
+        公式HP:https://www.hachimangu.or.jp/
+        住所    :神奈川県鎌倉市雪ノ下2-1-31
+        　　　　「JR鎌倉駅」東口から徒歩10分
+
+        """
+        attributedString.append(NSAttributedString(
+            string: text4,
+            attributes: [.font: bodyFont]
+        ))
+        
         Richtext.attributedText = attributedString
         Richtext.dataDetectorTypes = [.link]
+        Richtext.isEditable = false
+        Richtext.isSelectable = true
     }
 }
 
