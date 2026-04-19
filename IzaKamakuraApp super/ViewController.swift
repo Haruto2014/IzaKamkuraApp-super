@@ -12,7 +12,7 @@ final class ViewController: UIViewController, MKMapViewDelegate {
     // ピン3つ（MP4直リンク.）
     private let spots: [(title: String, lat: Double, lon: Double, url: String)] = [
         ("茶道体験", 35.319, 139.546, "https://www.w3schools.com/html/mov_bbb.mp4"),
-        ("座禅体験　報国寺", 35.319997, 139.569221, "https://www.w3schools.com/html/movie.mp4"),
+        ("座禅体験　建長寺", 35.319997, 139.569221, "https://www.w3schools.com/html/movie.mp4"),
         ("鎌倉彫工房", 35.320424, 139.553299, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("朝食屋コバカバ", 35.317481, 139.551333, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("報国寺", 35.320270, 139.569585, "https://www.w3schools.com/html/mov_bbb.mp4"),
@@ -22,6 +22,8 @@ final class ViewController: UIViewController, MKMapViewDelegate {
         ("銭洗弁財天",35.325818, 139.542105, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("長谷寺",35.312465, 139.533063, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("本覚寺",35.317311, 139.552356, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("高徳院",35.316815, 139.535744, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("鎌倉駅",35.31904, 139.550414, "https://www.w3schools.com/html/mov_bbb.mp4"),
     ]
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -4545,7 +4545,7 @@ https://multiecube.com/station/86
             <objects>
                 <viewController id="xlJ-DF-Oea" customClass="ViewController" customModule="IzaKamakuraApp_super" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M2h-r5-TVN">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="802"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ラベル用青" translatesAutoresizingMaskIntoConstraints="NO" id="OWa-2i-rdI">
@@ -4830,7 +4830,7 @@ https://multiecube.com/station/86
         <segue reference="8u5-rm-1eX"/>
         <segue reference="l0G-OP-NJj"/>
         <segue reference="Squ-eK-0ue"/>
-        <segue reference="6SK-pM-2qg"/>
+        <segue reference="zJ9-Wo-7vQ"/>
         <segue reference="9MZ-Ui-BDU"/>
     </inferredMetricsTieBreakers>
     <resources>
