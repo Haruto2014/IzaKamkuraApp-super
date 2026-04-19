@@ -1,63 +1,53 @@
-//Helloworld
-//  HomeViewController.swift
-//  IzaKamakuraApp super
-//
-//  Created by Hide I on 2026/04/17.
-//
+//import UIKit
+//import AVKit
+//import AVFoundation
 
-import UIKit
-import AVKit
-import AVFoundation
+//class HomeViewController: UIViewController {
 
-class HomeViewController: UIViewController {
+//  var player: AVPlayer?
+//    var playerLayer: AVPlayerLayer?
 
-    var player: AVPlayer?
-    var playerLayer: AVPlayerLayer?
+//  @IBOutlet weak var videoView: UIView!
+//  @IBOutlet weak var nextButton: UIButton!
 
-    @IBOutlet weak var videoView: UIView!
+//  override func viewDidLoad() {
+//      super.viewDidLoad()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//      guard let path = Bundle.main.path(forResource: "Top動画", ofType: "MOV") else { return }
 
-        guard let path = Bundle.main.path(forResource: "home_movie", ofType: "MOV") else { return }
+//      let url = URL(fileURLWithPath: path)
+//      player = AVPlayer(url: url)
 
-        let url = URL(fileURLWithPath: path)
-        player = AVPlayer(url: url)
+//      playerLayer = AVPlayerLayer(player: player)
+//        playerLayer?.frame = videoView.bounds
+//      playerLayer?.videoGravity = .resizeAspectFill
+//      videoView.layer.addSublayer(playerLayer!)
+        //videoView.clipsToBounds = true
+        //videoView.layer.addSublayer(playerLayer!)
+        //view.sendSubviewToBack(videoView)
 
-        playerLayer = AVPlayerLayer(player: player)
-        playerLayer?.frame = videoView.bounds
-        playerLayer?.videoGravity = .resizeAspectFill
+        //view.bringSubviewToFront(nextButton)
+        //view.bringSubviewToFront(titleLabel)
+        //view.bringSubviewToFront(subtitleLabel)
+        
+//        player?.play()
+//      player?.isMuted = true
 
-        videoView.layer.addSublayer(playerLayer!)
+//        NotificationCenter.default.addObserver(
+//          self,
+//          selector: #selector(loopVideo),
+//          name: .AVPlayerItemDidPlayToEndTime,
+//          object: player?.currentItem
+//      )
+//  }
 
-        player?.play()
-        player?.isMuted = true
+//  override func viewDidAppear(_ animated: Bool) {
+//      super.viewDidAppear(animated)
+//      self.view.bringSubviewToFront(nextButton) // ←ここ
+//  }
 
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(loopVideo),
-            name: .AVPlayerItemDidPlayToEndTime,
-            object: player?.currentItem
-        )
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        playerLayer?.frame = videoView.bounds
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        player?.pause()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        player?.play()
-    }
-
-    @objc func loopVideo() {
-        player?.seek(to: .zero)
-        player?.play()
-    }
-}
+//  @objc func loopVideo() {
+//      player?.seek(to: .zero)
+//      player?.play()
+//  }
+//}
