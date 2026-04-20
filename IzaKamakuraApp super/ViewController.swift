@@ -24,6 +24,7 @@ final class ViewController: UIViewController, MKMapViewDelegate {
         ("本覚寺",35.317311, 139.552356, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("高徳院",35.316815, 139.535744, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("鎌倉駅",35.31904, 139.550414, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("円覚寺",35.337725, 139.547525, "https://www.w3schools.com/html/mov_bbb.mp4"),
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
