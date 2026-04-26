@@ -13,7 +13,7 @@ final class ViewController: UIViewController, MKMapViewDelegate {
     private let spots: [(title: String, lat: Double, lon: Double, url: String)] = [
         ("茶道体験", 35.319, 139.546, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("座禅体験　建長寺", 35.319997, 139.569221, "https://www.w3schools.com/html/movie.mp4"),
-        ("鎌倉彫工房", 35.320424, 139.553299, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("鎌倉彫資料館", 35.320424, 139.553299, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("朝食屋コバカバ", 35.317481, 139.551333, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("報国寺", 35.320270, 139.569585, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("和菓子", 35.339318, 139.537025, "https://www.w3schools.com/html/mov_bbb.mp4"),
@@ -25,6 +25,11 @@ final class ViewController: UIViewController, MKMapViewDelegate {
         ("高徳院",35.316815, 139.535744, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("鎌倉駅",35.31904, 139.550414, "https://www.w3schools.com/html/mov_bbb.mp4"),
         ("円覚寺",35.337725, 139.547525, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("明月院",35.33489, 139.551523, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("浄明寺",35.33489, 139.551523, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("東慶寺",35.335141, 139.54562, "https://www.w3schools.com/html/mov_bbb.mp4"),
+        ("鎌倉彫工芸館",35.320424, 139.553299, "https://www.w3schools.com/html/mov_bbb.mp4"),
+
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
